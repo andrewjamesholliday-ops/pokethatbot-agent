@@ -1,0 +1,50 @@
+{
+  "ucp": {
+    "version": "2026-08-25",
+    "services": {
+      "dev.ucp.shopping": [
+        {
+          "version": "2026-08-25",
+          "transport": "mcp",
+          "spec": "https://ucp.dev/2026-08-25/specification/overview/",
+          "schema": "https://ucp.dev/2026-08-25/services/shopping/mcp.openrpc.json"
+        }
+      ]
+    },
+    "capabilities": {
+      "dev.ucp.shopping.catalog.search": [
+        {
+          "version": "2026-08-25"
+        }
+      ],
+      "dev.ucp.shopping.catalog.lookup": [
+        {
+          "version": "2026-08-25"
+        }
+      ],
+      "dev.shopify.catalog": [
+        {
+          "version": "2026-08-25",
+          "spec": "https://shopify.dev/docs/agents/catalog/storefront-catalog",
+          "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog.json",
+          "extends": [
+            "dev.ucp.shopping.catalog.search",
+            "dev.ucp.shopping.catalog.lookup"
+          ]
+        }
+      ]
+    },
+    "payment_handlers": {}
+  },
+  "keys": [
+    {
+      "kid": "Pjf4l8g8bO_h9MBmIhDnbzjpqgEGzlZaq8ujkM4m_gY",
+      "kty": "EC",
+      "crv": "P-256",
+      "x": "Q82xgeJTaYLl8p7Zdmk2rGv_2G27j1KCyPGDwBBZJ-U",
+      "y": "IFXZzIOGr8lvKhrbCRjqixwsXvpda6TC15enAHzUuiI",
+      "use": "sig",
+      "alg": "ES256"
+    }
+  ]
+}

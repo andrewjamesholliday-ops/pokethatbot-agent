@@ -46,5 +46,16 @@
       "use": "sig",
       "alg": "ES256"
     }
+  ],
+  "signing_keys": [
+    {
+      "kid": "Pjf4l8g8bO_h9MBmIhDnbzjpqgEGzlZaq8ujkM4m_gY",
+      "kty": "EC",
+      "crv": "P-256",
+      "x": "Q82xgeJTaYLl8p7Zdmk2rGv_2G27j1KCyPGDwBBZJ-U",
+      "y": "IFXZzIOGr8lvKhrbCRjqixwsXvpda6TC15enAHzUuiI",
+      "use": "sig",
+      "alg": "ES256"
+    }
   ]
 }
